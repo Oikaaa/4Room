@@ -1,5 +1,12 @@
 if (localStorage.getItem("userSignUpInfo") === null){
-    localStorage.setItem("userSignUpInfo", JSON.stringify([]))
+    localStorage.setItem("userSignUpInfo", JSON.stringify([
+        {
+            username: "dummy",
+            display: "dummy",
+            email: "dummy@gmail.com",
+            password: "wontworknigga"
+        }
+    ]))
 }
 
 const inputUsername = document.getElementById('inputUsername')
@@ -8,20 +15,28 @@ const inputEmail = document.getElementById('inputEmail')
 const inputPassword = document.getElementById('inputPassword')
 const gridCheck = document.getElementById('gridCheck')
 
+const existed = JSON.parse(localStorage.getItem("userSignUpInfo"))
 
-document.getElementById("btn").addEventListener('click', function(){
-    if (inputUsername.value === "" || inputDisUsername.value === "" || inputEmail.value === "" || inputPassword.value === ""){
-        alert('Please fill up the form')
-    } else{
-        const userInfo = {
-            username: inputUsername.value,
-            display: inputDisUsername.value,
-            email: inputEmail.value,
-            password: inputPassword.value,
+document.getElementById("btn").addEventListener('click', function(e){
+    e.preventDefault() 
+    const fe = existed.email.includes(inputEmail.value)
+
+    if (fe === true){
+        if (inputUsername.value === "" || inputDisUsername.value === "" || inputEmail.value === "" || inputPassword.value === ""){
+            alert('Please fill up the form')
+        } else{
+            const userInfo = {
+                username: inputUsername.value,
+                display: inputDisUsername.value,
+                email: inputEmail.value,
+                password: inputPassword.value,
+            }
+
+            const user = JSON.parse(localStorage.getItem("userSignUpInfo"))
+            user.push(userInfo)
+            localStorage.setItem("userSignUpInfo", JSON.stringify(user))
         }
-
-        const user = JSON.parse(localStorage.getItem("userSignUpInfo"))
-        user.push(userInfo)
-        localStorage.setItem("userSignUpInfo", JSON.stringify(user))
+    }else{
+        console.log("no")
     }
 })

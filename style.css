@@ -283,7 +283,7 @@
 .usernameAvatar{
     font-size: 30px;
     margin: 10px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .hai{
@@ -349,4 +349,11 @@
     display: flex;
     opacity: 0.8;
     font-size: 13px;
+}
+
+.dropdpwn{
+    display: block;
+    position: fixed;
+    top: 200px;
+    right: 200px;
 }

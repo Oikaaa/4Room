@@ -9,3 +9,6 @@ function fakebtn (){
 document.getElementById('btnSaved').addEventListener('click', function(){
     document.getElementById('btnSavedIcon').style.color = 'yellow'
 })
+
+const usernameAvatar = document.getElementById("usernameAvatar")
+usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0].display

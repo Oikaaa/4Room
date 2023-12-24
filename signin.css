@@ -1,0 +1,19 @@
+body{
+    background: rgb(238,174,202);
+    background: linear-gradient(39deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    height: 1000px;
+}
+.signUp{
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

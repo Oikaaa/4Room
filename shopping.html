@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body id="body">
+<body id="body"> 
     <input type="file" name="" id="fileId" hidden>
         <nav style="background-color: white; position: fixed; width: 100%;">
             <div style="padding: 5px 50px;">
@@ -47,10 +47,10 @@
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" style="padding: 8px;text-decoration: none; color: black;" aria-current="page">Community</a>
-                            <a href="#" style="padding: 8px;text-decoration: none; color: gray">News</a>
-                            <a href="#" style="padding: 8px;text-decoration: none; color: gray">Messages</a>
-                            <a href="#" style="padding: 8px;text-decoration: none; color: gray">Calendar</a>
+                            <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html" style="padding: 8px;text-decoration: none; color: black;" aria-current="page">Community</a>
+                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/News.html" style="padding: 8px;text-decoration: none; color: gray">News</a>
+                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/message.html" style="padding: 8px;text-decoration: none; color: gray">Messages</a>
+                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/Calendar.html" style="padding: 8px;text-decoration: none; color: gray">Calendar</a>
                         </div>
                     </div>
                 </div>
@@ -100,10 +100,10 @@
             <div class="sm:hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pb-3 pt-2">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html" style="padding: 8px;text-decoration: none; color: black;" aria-current="page">Community</a>
+                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/News.html" style="padding: 8px;text-decoration: none; color: gray">News</a>
+                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/message.html" style="padding: 8px;text-decoration: none; color: gray">Messages</a>
+                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/Calendar.html" style="padding: 8px;text-decoration: none; color: gray">Calendar</a>
             </div>
             </div>
         </nav>
@@ -199,7 +199,7 @@
                 <div class="profile">
                     <h3 style="font-size: 25px; margin-top: 30px; margin-bottom: 30px; font-weight: 300;">Account</h3>
                     <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/c58tdl06f8632ao6s9srgv44at.jpg" style="width: 175px; box-shadow: 2px 2px #bfbfbf; height: 175px; border-radius: 10px;" alt="">
-                    <p class="usernameAvatar">Alexandre</p>
+                    <p id="usernameAvatar" class="usernameAvatar"></p>
 
                     <div class="information">
                         <p class="hai">Followed: <span style="font-weight: 400">23</span></p>
@@ -256,5 +256,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js"></script>
     <script src="./shopping.js"></script>
+    
 </body>
 </html>

@@ -10,6 +10,9 @@ async function getData(){
 
         const postZone = document.getElementById('postZone')
 
+        const usernameAvatar = document.getElementById("usernameAvatar")
+usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0].display
+
         postData.posts.forEach(function(item, index){
             const currentUser = userData.users.find(function(user){
                 return user.id === item.id
