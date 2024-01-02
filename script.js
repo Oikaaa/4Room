@@ -1,14 +1,21 @@
-const fake = document.getElementById('fake')
-fake.addEventListener('click', fakebtn)
+const existed = JSON.parse(localStorage.getItem("userSignUpInfo"))
 
-function fakebtn (){
-    console.log(1)
-    document.getElementById('fileId').click()
+const signUpAccount = existed.find(inAccount)
+function inAccount (IN){
+    return IN.logCondition === "IN"
 }
 
-document.getElementById('btnSaved').addEventListener('click', function(){
-    document.getElementById('btnSavedIcon').style.color = 'yellow'
-})
+if (signUpAccount === undefined){
+    
+    window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/signin.html")
+} else {
+    const usernameAvatar = document.getElementById("usernameAvatar")
+    usernameAvatar.innerText = signUpAccount.display
+}
 
-const usernameAvatar = document.getElementById("usernameAvatar")
-usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0].display
+//----------------------------------------
+const profile = document.getElementById('user-menu-button')
+
+profile.addEventListener('click',function(){
+    window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/profile.html#")
+})

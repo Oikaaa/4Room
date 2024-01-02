@@ -1,0 +1,114 @@
+.setting{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    top: 0px;
+}
+
+.lists{
+    padding: 10px 100px 10px 12px;
+}
+
+.lists:hover{
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+.list{
+    text-decoration: none;
+    color: black;
+}
+
+.settingg{
+    width: fit-content;
+    padding: 0px;
+}
+
+.setHeader{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.idk{
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 7px 0px 7px 0px;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.jsStuff{
+    margin: 0px 10px;
+}
+
+.dumb{
+    color: gray;
+}
+
+.edit{
+    margin: 0px;
+    color: gray;
+    font-size: 17px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.ik{
+    display: flex;
+}
+
+.selected{
+    background-color: black;
+    height: 44px;
+    width: 5px;
+    position: absolute;
+    left: 282px;
+
+}
+
+.formHehe{
+    width: 50%;
+    font-size: 17px;
+}
+
+.formHehe:hover{
+    cursor: pointer;
+}
+
+.formBirth{
+    width: 33%;
+    font-size: 17px;
+}
+
+.formBirth:hover{
+    cursor: pointer;
+}
+
+.gender{
+    height: 35;
+    width: 50px;
+}
+
+.btnAll{
+    color: white;
+    height: 35px !important;
+    background-color: #0a6efd;
+    margin: 0px;
+}
+
+.inputOrg{
+    height: 30px;
+    font-size: 17px;
+    width: 300px;
+}
+
+.saveInfo{
+    background-color: #198755 !important;
+    color: white;
+    margin-top: 30px;
+}

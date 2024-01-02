@@ -1,18 +1,28 @@
-const email = document.getElementById("inputEmail")
-const password = document.getElementById("inputPassword")
-
-const userEmail = JSON.parse(localStorage.getItem("userSignUpInfo"))[0].email
-const userPassword = JSON.parse(localStorage.getItem("userSignUpInfo"))[0].password
-
-
+const emailIn = document.getElementById("inputEmail")
+const passwordIn = document.getElementById("inputPassword")
 
 document.getElementById("btn").addEventListener('click', function(event){
     event.preventDefault()
-    if (email.value === userEmail && password.value === userPassword){
-        window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html")
-    } else{
+    const existed = JSON.parse(localStorage.getItem("userSignUpInfo"))
+    const fE = existed.find(findEmail)
+    function findEmail(emailEx){
+        return emailEx.email === emailIn.value
+    }
+    if (fE === undefined){
         const alert = document.getElementById("alert")
         alert.style.display = "block"
-
+    } else{
+        if (fE.password === passwordIn.value){
+            console.log("true")
+            fE.logCondition = "IN"
+            console.log(existed)
+            localStorage.setItem("userSignUpInfo", JSON.stringify(existed))
+            window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html")
+        }else{
+            const alert = document.getElementById("alert")
+            alert.style.display = "block"
+        }
     }
+    
+
 })
