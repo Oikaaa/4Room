@@ -357,3 +357,79 @@
     top: 200px;
     right: 200px;
 }
+
+.thread{
+    background-color: white; 
+    width: 550px; height: 50px; 
+    border-radius: 10px; 
+    box-shadow: 0px 1px #cccccc; 
+    padding-left: 30px;
+}
+
+@media (max-width: 1200px) {
+    .article{
+        display: none;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .mm{
+        display: none;
+    }
+
+    .postZone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post{
+        width: 90%;
+    }
+
+    .thread{
+        width: 90%;
+    }
+
+    .addThread{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .article{
+        display: none;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .mm{
+        display: none;
+    }
+
+    .postZone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post{
+        width: 80%;
+    }
+
+    .thread{
+        width: 80%;
+    }
+
+    .addThread{
+        display: flex;
+        justify-content: center;
+    }
+}

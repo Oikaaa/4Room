@@ -1,16 +1,16 @@
 async function getData(){
     try{
-        const respApi = await fetch('./shopping.json');
+        const respApi = await fetch('./home.json');
         const postData = await respApi.json();
-        console.log(postData);
+        console.log(postData.posts);
 
-        const userApi = await fetch('https://dummyjson.com/users');
+        const userApi = await fetch('./homeUser.json');
         const userData = await userApi.json();
-        console.log(userData);
+        console.log(userData.users);
 
         const postZone = document.getElementById('postZone')
 
-        postData.shop.forEach(function(item, index){
+        postData.posts.forEach(function(item, index){
             const currentUser = userData.users.find(function(user){
                 return user.id === item.id
             })
@@ -33,7 +33,7 @@ async function getData(){
 
             const avatar = document.createElement('img')
             avatar.classList.add('avatar')
-            avatar.src = currentUser?.image
+            avatar.src = currentUser?.avatar
 
             //-------------------------
             const detail = document.createElement('div')
@@ -41,7 +41,7 @@ async function getData(){
 
             const name = document.createElement('h4')
             name.classList.add('name')
-            name.innerText = currentUser?.firstName + " " + currentUser?.lastName
+            name.innerText = currentUser?.username
 
             const time = document.createElement('p')
             time.classList.add('time')
@@ -56,11 +56,6 @@ async function getData(){
             const functionHTML = document.createElement('div')
             functionHTML.classList.add('function')
 
-            //-------------------------
-
-            const shopImg = document.createElement('img')
-            shopImg.classList.add('shopImg')
-            shopImg.src = item.image
             //-------------------------
 
             const btnSaved = document.createElement('div')
@@ -87,7 +82,6 @@ async function getData(){
 
             //---------------------------
 
-
             postZone.appendChild(postDiv)
             postDiv.appendChild(helloDiv)
             helloDiv.appendChild(postHeader)
@@ -99,7 +93,6 @@ async function getData(){
             detail.appendChild(time)
             helloDiv.appendChild(textBox)
             textBox.appendChild(para)
-            textBox.appendChild(shopImg)
             helloDiv.appendChild(functionHTML)
             functionHTML.appendChild(btnSaved)
             btnSaved.appendChild(btnSavedIcon)
