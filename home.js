@@ -13,7 +13,6 @@ async function getData(){
 
         const postZone = document.getElementById('postZone')
 
-
         postData.posts.forEach(function(item, index){
             const currentUser = userData.users.find(function(user){
                 return user.id === item.id
