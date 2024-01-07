@@ -28,7 +28,9 @@ SignOut.addEventListener('click', function(){
     console.log(signUpAccount.display)
     signUpAccount.logCondition = "OUT"
     localStorage.setItem("userSignUpInfo", JSON.stringify(existed))
-    window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/signin.html")
+    setTimeout(function(){
+        window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/signin.html")
+    },450)
 })
 
 //-----------------------------------------
@@ -152,6 +154,7 @@ saveInfo.addEventListener('click',function(){
     signUpAccount.gender = genderr.options[genderr.selectedIndex].value
     localStorage.setItem('userSignUpInfo', JSON.stringify(existed))
     location.reload();
+    alert('Saved')
 })
 
 //--------------------------------

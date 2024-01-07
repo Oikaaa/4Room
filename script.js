@@ -17,7 +17,9 @@ if (signUpAccount === undefined){
 const profile = document.getElementById('user-menu-button')
 
 profile.addEventListener('click',function(){
-    window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/profile.html#")
+    setTimeout(function(){
+        window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/profile.html#")
+    }, 450)
 })
 
 //-------------------------------------
