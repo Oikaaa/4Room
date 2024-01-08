@@ -1,23 +1,19 @@
-let postData = {posts:[]}
+let postData = {movies:[]}
 let userData = {users:[]}
 let similar = []
-
 async function getData(){
     try{
-        const respApi = await fetch('https://dummyjson.com/posts');
+        const respApi = await fetch('./movies.json');
         postData = await respApi.json();
         console.log(postData);
 
-        const userApi = await fetch('https://dummyjson.com/users');
+        const userApi = await fetch('./homeUser.json');
         userData = await userApi.json();
         console.log(userData);
 
         const postZone = document.getElementById('postZone')
 
-        const usernameAvatar = document.getElementById("usernameAvatar")
-usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0].display
-
-        postData.posts.forEach(function(item, index){
+        postData.movies.forEach(function(item, index){
             const currentUser = userData.users.find(function(user){
                 return user.id === item.id
             })
@@ -40,7 +36,7 @@ usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0]
 
             const avatar = document.createElement('img')
             avatar.classList.add('avatar')
-            avatar.src = currentUser?.image
+            avatar.src = currentUser?.avatar
 
             //-------------------------
             const detail = document.createElement('div')
@@ -48,20 +44,26 @@ usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0]
 
             const name = document.createElement('h4')
             name.classList.add('name')
-            name.innerText = currentUser?.firstName + " " + currentUser?.lastName
+            name.innerText = currentUser?.username
 
             const time = document.createElement('p')
             time.classList.add('time')
-            time.innerText = item.reactions + ' hours'
+            time.innerText = item.reaction + ' hours'
             //-------------------------
             const textBox = document.createElement('div')
             textBox.classList.add('textBox')
 
             const para = document.createElement('p')
-            para.innerText = item.body
+            para.innerText = item.description
 
             const functionHTML = document.createElement('div')
             functionHTML.classList.add('function')
+
+            //-------------------------
+
+            const shopImg = document.createElement('img')
+            shopImg.classList.add('shopImg')
+            shopImg.src = item.image
             //-------------------------
 
             const btnSaved = document.createElement('div')
@@ -100,6 +102,7 @@ usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0]
             detail.appendChild(time)
             helloDiv.appendChild(textBox)
             textBox.appendChild(para)
+            textBox.appendChild(shopImg)
             helloDiv.appendChild(functionHTML)
             functionHTML.appendChild(btnSaved)
             btnSaved.appendChild(btnSavedIcon)
@@ -121,7 +124,7 @@ getData()
 const find = document.getElementById('find')
 
 find.onkeydown = function(e){
-        similar = postData.posts.filter(function(item){
+        similar = postData.movies.filter(function(item){
             return item.title.includes(e.target.value)
         })
         console.log(similar)
@@ -152,7 +155,7 @@ find.onkeydown = function(e){
 
             const avatar = document.createElement('img')
             avatar.classList.add('avatar')
-            avatar.src = currentUser?.image
+            avatar.src = currentUser?.avatar
 
             //-------------------------
             const detail = document.createElement('div')
@@ -160,20 +163,26 @@ find.onkeydown = function(e){
 
             const name = document.createElement('h4')
             name.classList.add('name')
-            name.innerText = currentUser?.firstName + " " + currentUser?.lastName
+            name.innerText = currentUser?.username
 
             const time = document.createElement('p')
             time.classList.add('time')
-            time.innerText = item.reactions + ' hours'
+            time.innerText = item.reaction + ' hours'
             //-------------------------
             const textBox = document.createElement('div')
             textBox.classList.add('textBox')
 
             const para = document.createElement('p')
-            para.innerText = item.body
+            para.innerText = item.description
 
             const functionHTML = document.createElement('div')
             functionHTML.classList.add('function')
+
+            //-------------------------
+
+            const shopImg = document.createElement('img')
+            shopImg.classList.add('shopImg')
+            shopImg.src = item.image
             //-------------------------
 
             const btnSaved = document.createElement('div')
@@ -212,6 +221,7 @@ find.onkeydown = function(e){
             detail.appendChild(time)
             helloDiv.appendChild(textBox)
             textBox.appendChild(para)
+            textBox.appendChild(shopImg)
             helloDiv.appendChild(functionHTML)
             functionHTML.appendChild(btnSaved)
             btnSaved.appendChild(btnSavedIcon)
@@ -220,6 +230,6 @@ find.onkeydown = function(e){
             btnComment.appendChild(hi)
 
         })
-}
+    }
 
 

@@ -1,0 +1,88 @@
+{
+    "movies":[
+        {
+            "id": 30,
+            "title": "The Shawshank Redemption (1994)",
+            "description": "It's a tale of resilience, friendship, and hope in the face of adversity. The captivating storyline, brilliant performances by Morgan Freeman and Tim Robbins, and its message about the human spirit make it a must-watch.",
+            "reaction": "4",
+            "image":"https://www.hollywoodreporter.com/wp-content/uploads/2018/03/the_shawshank_redemption_-_h_-_1994.jpg"
+        },
+        {
+            "id": 21,
+            "title": "The Godfather (1972)",
+            "description": "Regarded as one of the greatest films ever made, it immerses you in the world of the Italian-American mafia. With powerful performances by Marlon Brando and Al Pacino, it's a compelling story of power, loyalty, and family.",
+            "reaction": "7",
+            "image":"https://warhornmedia.com/wp-content/uploads/2022/09/MV5BNjE0ODljZWUtNThhYy00YjgzLWI1NWYtN2M5OWI0ZWI2NmEwXkEyXkFqcGdeQXVyMjMzMDI4MjQ@._V1_-1280x640.jpg"
+        },
+        {
+            "id": 13,
+            "title": "The Dark Knight (2008)",
+            "description": "Christopher Nolan's take on Batman is gripping and intense. Heath Ledger's iconic portrayal of the Joker, combined with a complex storyline, makes it a thrilling and thought-provoking superhero film.",
+            "reaction": "42",
+            "image":"https://3.bp.blogspot.com/-oCKPYJaV-EU/T8HMNCfbRVI/AAAAAAAACcg/sPDJ1Pz9TBs/s1600/Dark+Knight+19a.jpg"
+        },
+        {
+            "id": 14,
+            "title": "Pulp Fiction (1994)",
+            "description": "Quentin Tarantino's masterpiece is known for its non-linear narrative, memorable dialogue, and eclectic characters. It's a stylish and witty crime film that offers a fresh take on storytelling.",
+            "reaction": "8",
+            "image":"https://aarohpalkar.files.wordpress.com/2015/11/pulpfiction.jpeg"
+        },
+        {
+            "id": 5,
+            "title": "Schindler's List (1993)",
+            "description": "Directed by Steven Spielberg, this powerful film is based on the true story of Oskar Schindler, a German businessman who saved the lives of over a thousand Polish-Jewish refugees during the Holocaust. It's a deeply moving portrayal of humanity amidst the horrors of war.",
+            "reaction": "15",
+            "image":"https://i.guim.co.uk/img/media/208d00c732eeed823ec55afe35faf252843e0c59/0_47_2520_1512/master/2520.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2afc817c2c585aa9342fa808b7b4decd"
+        },
+        {
+            "id": 6,
+            "title": "Inception (2010)",
+            "description": "Christopher Nolan's mind-bending sci-fi thriller explores dreams and subconsciousness. With stunning visuals and a complex, layered plot, it challenges the audience's perception of reality.",
+            "reaction": "20",
+            "image":"https://images.saymedia-content.com/.image/t_share/MTgxMDUzMTQyOTY2ODcxNDAw/movie-review-christopher-nolans-inception-2010.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Forrest Gump (1994)",
+            "description": "This heartwarming tale follows the life of Forrest Gump, played by Tom Hanks, who unwittingly becomes part of significant historical events. It's a story about love, perseverance, and the unpredictability of life.",
+            "reaction": "5",
+            "image":"https://media.cnn.com/api/v1/images/stellar/prod/140702154952-02-forrest-gump-restricted.jpg?q=w_2434,h_1631,x_0,y_0,c_fill"
+        },
+        {
+            "id": 10,
+            "title": "The Matrix (1999)",
+            "description": "A groundbreaking film that explores the concept of a simulated reality. With its innovative special effects and philosophical themes, it's a must-see for fans of action-packed sci-fi.",
+            "reaction": "9",
+            "image":"https://images.squarespace-cdn.com/content/v1/5a1c2452268b96d901cd3471/1536368490055-A6V3GA280DLKLZM6BEFK/the-matrix.jpg?format=1500w"
+        },
+        {
+            "id": 11,
+            "title": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+            "description": "This epic fantasy adventure, based on J.R.R. Tolkien's novel, introduces viewers to a richly detailed world filled with heroes, villains, and a quest to destroy a powerful ring.",
+            "reaction": "8",
+            "image":"https://m.media-amazon.com/images/M/MV5BMjQ4NDg5MTQwNl5BMl5BanBnXkFtZTgwNTQwMTk2MTI@._V1_.jpg"
+        },
+        {
+            "id": 12,
+            "title": "Fight Club (1999)",
+            "description": "A gritty and thought-provoking film that delves into the complexities of modern life, consumerism, and identity. It's dark, intense, and leaves a lasting impact.",
+            "reaction": "4",
+            "image":"https://m.media-amazon.com/images/M/MV5BMTM4MjA2MzI0OF5BMl5BanBnXkFtZTcwNjU3ODMzMw@@._V1_.jpg"
+        },
+        {
+            "id": 13,
+            "title": "Interstellar (2014)",
+            "description": "“Interstellar” not only explores the wonders of space but also delves into themes of love, sacrifice, and the human spirit. It tackles profound questions about the nature of existence and the choices we make, leaving you with a sense of introspection and emotional resonance.",
+            "reaction": "8",
+            "image":"https://preview.redd.it/10zutid8u6651.jpg?auto=webp&s=e53fd087e06d35092edb7e97463d04a0fa5f78d8"
+        },
+        {
+            "id": 14,
+            "title": "Goodfellas (1990)",
+            "description": "It tells the true story of a young Italian American boy who slowly becomes sucked into the life of crime, drugs and violence. It shows how it ruins him and tears him apart and I think it's a vital movie for teenagers to see for those reasons.",
+            "reaction": "1",
+            "image":"https://m.media-amazon.com/images/M/MV5BMTYwODA1OTQ3N15BMl5BanBnXkFtZTcwNjMwMjMwNA@@._V1_.jpg"
+        }
+    ]
+}

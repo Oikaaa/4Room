@@ -23,3 +23,21 @@ profile.addEventListener('click',function(){
 })
 
 //-------------------------------------
+
+const join = document.getElementById('join')
+const closeModal = document.getElementById('closeModal')
+const modalBg = document.getElementById('modalBg')
+
+join.addEventListener('click', function(){
+    if (modalBg.style.display === 'none'){
+        modalBg.style.display = 'block'
+        console.log('yes')
+    } 
+})
+
+closeModal.addEventListener('click', function(){
+    if (modalBg.style.display === 'block'){
+        modalBg.style.display = 'none'
+    } 
+})
+

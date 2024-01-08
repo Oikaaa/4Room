@@ -1,0 +1,60 @@
+{
+    "plants":[
+        {
+            "id": 18,
+            "title": "Monstera Deliciosa",
+            "description": "Monstera Deliciosa, also known as the Swiss Cheese Plant, is a popular choice for its striking split leaves that add a tropical touch to any space. It's relatively easy to care for and grows well in indirect light.",
+            "image": "https://greenvibes.vn/wp-content/uploads/2023/07/monstera-deliciosa-20061-01-1.jpg",
+            "reaction": 14
+        },
+        {
+            "id": 13,
+            "title": "Fiddle Leaf Fig",
+            "description": "The Fiddle Leaf Fig is an eye-catching plant with large, violin-shaped leaves. It's an elegant choice to bring a touch of nature indoors. It prefers bright, indirect light and regular watering.",
+            "image": "https://bloomscape.com/wp-content/uploads/2020/08/bloomscape_fiddle-leaf-fig_charcoal-e1652800894846.jpg?ver=279577",
+            "reaction": 21
+        },
+        {
+            "id": 12,
+            "title": "Snake Plant (Sansevieria)",
+            "description": "The Snake Plant is a hardy and low-maintenance plant known for its upright, sword-shaped leaves. It's an excellent air purifier and can thrive in low-light conditions, requiring minimal watering.",
+            "image": "https://hortology.co.uk/cdn/shop/files/Sansevieria-trifasciata-Laurentii-Variegated-Snake-Plant-30x90cm-Charlie-Plant-Pot-White-Washed-32x31cm.jpg?v=1689928388",
+            "reaction": 4
+        },
+        {
+            "id": 19,
+            "title": "ZZ Plant (Zamioculcas Zamiifolia)",
+            "description": "The ZZ Plant is valued for its glossy, dark green foliage and ability to tolerate low light and irregular watering. It's a great choice for beginners or for spaces with limited natural light.",
+            "image": "https://glasswingshop.com/cdn/shop/products/8D2A2069_2048x2048.jpg?v=1595400475",
+            "reaction": 7
+        },
+        {
+            "id": 25,
+            "title": "Spider Plant (Chlorophytum comosum)",
+            "description": "The Spider Plant is characterized by its long, arching leaves with white stripes. It's an adaptable plant that produces baby spider plants (spiderettes) and does well in various light conditions.",
+            "image": "https://hortology.co.uk/cdn/shop/products/Chlorophytum-Vittatum-Spider-Plant-12x35cm-Bilbao-Plant-Pot-Pale-Jade-14x14cm.jpg?v=1675696804",
+            "reaction": 13
+        },
+        {
+            "id": 29,
+            "title": "Peace Lily (Spathiphyllum)",
+            "description": "The Peace Lily is a popular choice for its elegant white flowers and lush green leaves. It prefers medium to low light and can help purify indoor air.",
+            "image": "https://truegreennursery.com.au/wp-content/uploads/Spathiphyllum_Emerald_Star-1b_LowRes.jpg",
+            "reaction": 18
+        },
+        {
+            "id": 5,
+            "title": "Pothos (Epipremnum aureum)",
+            "description": "Pothos, also known as Devil's Ivy, is a trailing vine with heart-shaped leaves. It's incredibly versatile, thriving in various light conditions and requiring minimal care.",
+            "image": "https://www.theplantproject.co.nz/cdn/shop/products/Epipremnum_aureum_golden_pothos_indoor_pot_plant_new_zealand_haning_2400x.jpg?v=1568591798",
+            "reaction": 23
+        },
+        {
+            "id": 15,
+            "title": "Rubber Plant (Ficus elastica)",
+            "description": "The Rubber Plant features large, glossy leaves that add a bold statement to indoor spaces. It prefers bright, indirect light and moderate watering.",
+            "image": "https://www.thespruce.com/thmb/edHnGWvbkJb4rq2XYnOkvWtrEIo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/grow-rubber-plant-ficus-indoors-1902755-02-700e0cea38e14a8987348973fb193f29.jpg",
+            "reaction": 9
+        }
+    ]
+}

@@ -175,7 +175,7 @@
                         </div>
                     </div>
                     <div style="display: flex; justify-content: center;">
-                        <button class="join">Join new room</button>
+                        <button id="join" class="join">Join new room</button>
                     </div>
                 </div>
                 <div class="divLine" style="left: 25%;"></div>
@@ -184,7 +184,7 @@
                 <div class="container">
                     <div>
                         <div class="addThread">
-                            <input class="thread" type="text" placeholder="Find a thread">
+                            <input class="thread" type="text" placeholder="Find a thread" id="find">
                         </div>
                         <div class="postZone" id="postZone">
                             
@@ -247,6 +247,16 @@
                         </div>                  
                     </div>
                 </div>
+            </div>
+        </div>
+        <div style="display: none;" id="modalBg" class="modalBg">
+            <div class="modalJoin">
+                <h1 style="font-size: 30px; margin: 10px; font-weight: 500;">Join new room via code!</h1>
+                <input type="text" placeholder="e.g. 124125" style="width: 90%; height: 45px; outline-style: solid; border-radius: 10px; outline-color: gray; padding: 0px 20px 0px 20px; margin: 5px;">
+                <div style="display: flex; justify-content: center; width: 90%;">
+                    <button class="joinNow" style="height: 50px; width: 100%;">Join now</button>
+                </div>
+                <h6 id="closeModal" class="closeModal" style="margin: 5px; color: #ED6A5A; text-decoration: underline;">close</h6>
             </div>
         </div>
 
