@@ -375,6 +375,14 @@
     padding-left: 30px;
 }
 
+.mobileBtn{
+    display: none;
+}
+
+.navLol{
+    display: block;
+}
+
 .modalBg{
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -414,6 +422,18 @@
 
     .mm{
         display: none;
+    }
+
+    .navLol{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .mobileBtn{
+        display: block;
     }
 
     .postZone{

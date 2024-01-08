@@ -41,3 +41,7 @@ closeModal.addEventListener('click', function(){
     } 
 })
 
+const mb = document.getElementById('mb')
+mb.addEventListener('click', function(){
+    
+})
