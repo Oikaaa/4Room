@@ -18,7 +18,7 @@
             <div style="display: flex; justify-content: space-between; padding: 13px;">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
-                    <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <button id="dashboardMb" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="absolute -inset-0.5"></span>
                         <span class="sr-only">Open main menu</span>
                         <!--
@@ -95,31 +95,56 @@
             </div>
         
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="sm:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-2">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
-            </div>
-            </div>
         </nav>
+        <div id="mbNav" class="mbNav" style="display: none;">
+            <ul>
+                <li>
+                    <a href="./index.html">Community</a>
+                </li>
+                <li>
+                    <a href="./News.html">News</a>
+                </li>
+                <li >
+                    <a href="./message.html">Messages</a>
+                </li>
+                <li>
+                    <a href="./calendar.html">Calender</a>
+                </li>
+                <div style="display: flex;">
+                <div style="width: 100%; height: 1px; background-color: #bfbfbf;"></div>
+                <h2 class="roomMb">Rooms (4)</h2>
+                <div style="width: 100%; height: 1px; background-color: #bfbfbf;"></div>
+                </div>
+                <li>
+                    <a href="./plants.html"><i class="icon fa fa-leaf" aria-hidden="true"></i>Plants</a>
+                </li>
+                <li>
+                    <a href="./shopping.html"><i class="icon fa fa-shopping-cart" aria-hidden="true"></i>Shopping</a>
+                </li>
+                <li>
+                    <a href="./movies.html"><i class="icon fa fa-video-camera" aria-hidden="true"></i>Movies</a>
+                </li>
+                <li>
+                    <a href="./posts.html"><i class="icon fa fa-window-restore" aria-hidden="true"></i>Post</a>
+                </li>
+    
+            </ul>
+        </div>
         <div class="setting">
-            <div style="background-color: white; margin-right: 15px; margin-top: 0px; margin-left: 15px; height: min-content;">
-                <ul class="" class="settingg">
+            <div class="menu">
+                <ul class="listt">
                     <div class="selected"></div>
-                    <li class="lists">
-                        <a class="Account list" href="./profile.html">Account</a>
+                    <li style="background-color: #dfdfdf;" class="list_son">
+                        <a href="./profile.html" class="listLink">Account Info</a>
                     </li>
-                    <li class="lists">
-                        <a class="Security list" href="./security.html">Security</a>
+                    <li class="list_son">
+                        <a href="./security.html" class="listLink">Security</a>
                     </li>
-                    <li class="lists">
-                        <a class="Privacy list" href="./privacy.html">Privacy</a>
+                    <li class="list_son">
+                        <a href="./privacy.html" class="listLink">Privacy</a>
                     </li>
-                    <li class="lists" id="SignOut">
-                        <button class="signOut list" href="#">Sign Out</button>
+                    <li id="SignOut" class="list_son">
+                        <button class="list" href="#">Sign Out</button>
                     </li>
                 </ul>
             </div>
@@ -166,8 +191,8 @@
                     <div class="ik">
                         <h5 class="dumb">Birthday</h5>
                     </div>
-                    <div style="width: 50%; display: flex;">
-                        <select id="month" class="form-select formBirth form-select-sm" aria-label="Small select example">
+                    <div class="formDk">
+                        <select id="month" class="form-select formMb formBirth form-select-sm" aria-label="Small select example">
                             <option value="Jan">Jan</option>
                             <option value="Feb">Feb</option>
                             <option value="Mar">Mar</option>
@@ -181,7 +206,7 @@
                             <option value="Nov">Nov</option>
                             <option value="Dec">Dec</option>
                         </select>
-                        <select id="date" class="form-select formBirth form-select-sm" aria-label="Small select example">
+                        <select id="date" class="form-select formMb formBirth form-select-sm" aria-label="Small select example">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -214,7 +239,7 @@
                             <option value="30">30</option>
                             <option value="31">31</option>
                         </select>
-                        <select id='year' class="form-select formBirth form-select-sm" aria-label="Small select example">
+                        <select id='year' class="form-select formMb formBirth form-select-sm" aria-label="Small select example">
                         <option value="2000">2000</option>
                         <option value="2001">2001</option>
                         <option value="2002">2002</option>
@@ -247,7 +272,7 @@
                     <div class="ik">
                         <h5 class="dumb">Location</h5>
                     </div>
-                    <select id="location" class="form-select formHehe form-select-sm" aria-label="Small select example">
+                    <select id="location" class="form-select formMb formHehe form-select-sm" aria-label="Small select example">
                         <option value="Asia">Asia</option>
                         <option value="Afirca">Africa</option>
                         <option value="Europe">Europe</option>
@@ -261,7 +286,7 @@
                     <div class="ik">
                         <h5 class="dumb">Gender</h5>
                     </div>
-                    <select id="gender" class="form-select formHehe form-select-sm" aria-label="Small select example">
+                    <select id="gender" class="form-select formMb formHehe form-select-sm" aria-label="Small select example">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="LGBTQA+" disabled>LGBTQA+</option>
@@ -272,7 +297,7 @@
                     <div class="ik">
                         <h5 class="dumb">Theme</h5>
                     </div>
-                    <select class="form-select formHehe form-select-sm" aria-label="Small select example">
+                    <select class="form-select formHehe formMb form-select-sm" aria-label="Small select example">
                         <option value="1">Light</option>
                         <option value="2" disabled>More background comming soon</option>
                     </select>
@@ -280,7 +305,9 @@
                 <button type="button" id="saveInfo" class="saveInfo btn btn-success">Save</button>
             </div>
         </div>
-        
+
+        <p id="disname"></p>
+        <div class="loading" id="loading"></div>
         
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -1,7 +1,7 @@
 let postData = {posts:[]}
 let userData = {users:[]}
 let similar = []
-
+const loading = document.getElementById('loading')
 async function getData(){
     try{
         const respApi = await fetch('https://dummyjson.com/posts');
@@ -117,6 +117,8 @@ usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0]
 }
 
 getData()
+
+loading.style.display = 'none'
 
 const find = document.getElementById('find')
 

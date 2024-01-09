@@ -1,6 +1,7 @@
 let postData = {movies:[]}
 let userData = {users:[]}
 let similar = []
+
 async function getData(){
     try{
         const respApi = await fetch('./plants.json');
@@ -232,4 +233,4 @@ find.onkeydown = function(e){
         })
     }
 
-
+    loading.style.display = 'none'

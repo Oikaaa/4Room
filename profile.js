@@ -9,6 +9,8 @@ function inAccount (IN){
     return IN.logCondition === "IN"
 }
 
+console.log(signUpAccount.display)
+
 disname.innerText = signUpAccount.display
 usrname.innerText = signUpAccount.username
 emaill.innerText = signUpAccount.email
@@ -24,7 +26,8 @@ profile.addEventListener('click',function(){
 
 const SignOut = document.getElementById('SignOut')
 
-SignOut.addEventListener('click', function(){
+SignOut.addEventListener('click', function(e){
+    e.preventDefault()
     console.log(signUpAccount.display)
     signUpAccount.logCondition = "OUT"
     localStorage.setItem("userSignUpInfo", JSON.stringify(existed))
@@ -233,3 +236,17 @@ for (var i=0; i<genderr.options.length; i++) {
     }
     } 
 }
+
+//-------------------
+const dashboardMb = document.getElementById('dashboardMb')
+const mbNav = document.getElementById('mbNav')
+
+dashboardMb.addEventListener('click', function(){
+    if (mbNav.style.display === 'none'){
+        mbNav.style.display = 'block'
+        console.log('done')
+    } else{
+        mbNav.style.display = 'none'
+        console.log('fail')
+    }
+})

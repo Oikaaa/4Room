@@ -14,170 +14,188 @@
 </head>
 <body id="body"> 
     <input type="file" name="" id="fileId" hidden>
-        <nav style="background-color: white; position: fixed; width: 100%;">
-            <div style="padding: 5px 50px;">
-            <div style="display: flex; justify-content: space-between; padding: 13px;">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- Mobile menu button-->
-                    <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
-                        <!--
-                        Icon when menu is closed.
-            
-                        Menu open: "hidden", Menu closed: "block"
-                        -->
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <!--
-                        Icon when menu is open.
-            
-                        Menu open: "block", Menu closed: "hidden"
-                        -->
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div style="display: flex;">
-                    <div class="flex flex-shrink-0 items-center">
-                        <img class="h-8 w-auto" src="./images/mark.svg" alt="Your Company">
-                    </div>
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html" style="padding: 8px;text-decoration: none; color: black;" aria-current="page">Community</a>
-                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/News.html" style="padding: 8px;text-decoration: none; color: gray">News</a>
-                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/message.html" style="padding: 8px;text-decoration: none; color: gray">Messages</a>
-                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/Calendar.html" style="padding: 8px;text-decoration: none; color: gray">Calendar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button" class="">
-                    <span class="sr-only">View notifications</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+    <nav style="background-color: white; position: fixed; width: 100%;">
+        <div style="padding: 5px 50px;">
+        <div style="display: flex; justify-content: space-between; padding: 13px;">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+                <button id="dashboardMb" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+                    Icon when menu is closed.
+        
+                    Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <!--
+                    Icon when menu is open.
+        
+                    Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-        
-                <!-- Profile dropdown -->
-                <div class="relative ml-3">
-                    <div>
-                    <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                        <span class="absolute -inset-1.5"></span>
-                        <span class="sr-only">Open user menu</span>
-                        <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    </button>
-                    </div>
-        
-                    <!--
-                    Dropdown menu, show/hide based on menu state.
-        
-                    Entering: "transition ease-out duration-100"
-                        From: "transform opacity-0 scale-95"
-                        To: "transform opacity-100 scale-100"
-                    Leaving: "transition ease-in duration-75"
-                        From: "transform opacity-100 scale-100"
-                        To: "transform opacity-0 scale-95"
-                    -->
-                    <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" style="display: none;">
-                    <!-- Active: "bg-gray-100", Not Active: "" -->
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
-                    </div>
+            </div>
+            <div style="display: flex;">
+                <div class="flex flex-shrink-0 items-center">
+                    <img class="h-8 w-auto" src="./images/mark.svg" alt="Your Company">
                 </div>
+                <div class="hidden sm:ml-6 sm:block navLol">
+                    <div class="flex space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a href="./index.html" style="padding: 8px;text-decoration: none; color: black;" aria-current="page">Community</a>
+                        <a href="./News.html" style="padding: 8px;text-decoration: none; color: gray">News</a>
+                        <a href="./message.html" style="padding: 8px;text-decoration: none; color: gray">Messages</a>
+                        <a href="./calendar.html" style="padding: 8px;text-decoration: none; color: gray">Calendar</a>
+                    </div>
                 </div>
             </div>
-            <hr style="background-color: #6366f1; opacity: 1; height: 3px; width: 100px;border-radius: 10px; left: 124px; position: fixed; margin: 0px;" >
 
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button" class="">
+                <span class="sr-only">View notifications</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+            </button>
+    
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+                <div>
+                <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="./images/basicAvatar.avif" alt="">
+                </button>
+                </div>            
             </div>
-        
-            <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="sm:hidden" id="mobile-menu">
+            </div>
+        </div>
+        <hr class="lineUp" style="background-color: #6366f1; opacity: 1; height: 3px; width: 100px;border-radius: 10px; left: 124px; position: fixed; margin: 0px;" >
+
+        </div>
+    
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden mm" id="mobile-menu">
             <div class="space-y-1 px-2 pb-3 pt-2">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html" style="padding: 8px;text-decoration: none; color: black;" aria-current="page">Community</a>
-                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/News.html" style="padding: 8px;text-decoration: none; color: gray">News</a>
-                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/message.html" style="padding: 8px;text-decoration: none; color: gray">Messages</a>
-                <a href="http://127.0.0.1:5500/Advanced-Web-Course/4Room/Calendar.html" style="padding: 8px;text-decoration: none; color: gray">Calendar</a>
+                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
             </div>
+        </div>
+    </nav>
+    <div id="mbNav" class="mbNav" style="display: none;">
+        <ul>
+            <li>
+                <a href="./index.html">Community</a>
+            </li>
+            <li>
+                <a href="./News.html">News</a>
+            </li>
+            <li >
+                <a href="./message.html">Messages</a>
+            </li>
+            <li>
+                <a href="./calendar.html">Calender</a>
+            </li>
+            <div style="display: flex;">
+            <div style="width: 100%; height: 1px; background-color: #bfbfbf;"></div>
+            <h2 class="roomMb">Rooms (4)</h2>
+            <div style="width: 100%; height: 1px; background-color: #bfbfbf;"></div>
             </div>
-        </nav>
-        <div style="display: flex;">
-            <div class="sidebar">
-                <div class="mainSideBar">
-                    <div class="lorem"onclick="location.href = 'http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html'">
-                        <div class="SideBarFunc">
-                            <div class="btnSideBar">
-                                <i class="fa fa-home" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
-                            </div>
-                            <a style="padding: 5px 20px; font-size: 15px;">Home</a>
+            <li>
+                <a href="./plants.html"><i class="icon fa fa-leaf" aria-hidden="true"></i>Plants</a>
+            </li>
+            <li>
+                <a href="./shopping.html"><i class="icon fa fa-shopping-cart" aria-hidden="true"></i>Shopping</a>
+            </li>
+            <li>
+                <a href="./movies.html"><i class="icon fa fa-video-camera" aria-hidden="true"></i>Movies</a>
+            </li>
+            <li>
+                <a href="./posts.html"><i class="icon fa fa-window-restore" aria-hidden="true"></i>Post</a>
+            </li>
+
+        </ul>
+    </div>
+    <div style="display: flex;">
+        <div class="sidebar">
+            <div class="mainSideBar">
+                <a class="lorem" href="./index.html">
+                    <div class="SideBarFunc">
+                        <div class="btnSideBar">
+                            <i class="fa fa-home" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
                         </div>
+                        <p style="padding: 5px 20px; font-size: 15px;">Home</p>
                     </div>
-                    <div class="lorem" onclick="location.href = 'http://127.0.0.1:5500/Advanced-Web-Course/4Room/yourThreads.html'">
-                        <div class="SideBarFunc">
-                            <div class="btnSideBar">
-                                <i class="fa fa-comment" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
-                            </div>
-                            <a style="padding: 5px 20px; font-size: 15px;">Your thread</a>
+                </a>
+                <a class="lorem" href="./yourThreads.html">
+                    <div class="SideBarFunc">
+                        <div class="btnSideBar">
+                            <i class="fa fa-comment" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
                         </div>
+                        <p style="padding: 5px 20px; font-size: 15px;">Your thread</p>
                     </div>
-                    <div class="lorem" onclick="location.href = 'http://127.0.0.1:5500/Advanced-Web-Course/4Room/saved.html'">
-                        <div class="SideBarFunc">
-                            <div class="btnSideBar">
-                                <i class="fa fa-bookmark" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
-                            </div>
-                            <a style="padding: 5px 20px; font-size: 15px;">Saved</a>
+                </a>
+                <a class="lorem" href="./saved.html">
+                    <div class="SideBarFunc">
+                        <div class="btnSideBar">
+                            <i class="fa fa-bookmark" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
                         </div>
+                        <p style="padding: 5px 20px; font-size: 15px;">Saved</p>
                     </div>
+                </a>
+            </div>
+            <div class="secSideBar">
+                <h4 style="font-size: 16px; font-weight: 400; color: gray; text-align: center; margin-top: 10px;">Current room (4)</h4>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <a class="room" href="./plants.html">
+                        <div class="logoRoom">
+                            <div style="height: 10px; width: 10px; background-color: green; border-radius: 50px;"></div>
+                        </div>
+                        <div>
+                            <h6 style="margin: 0px;">Plants</h6>
+                            <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 2+</p>
+                        </div>
+                    </a>
+                    <a class="room" href="./shopping.html">
+                        <div class="logoRoom">
+                            <div style="height: 10px; width: 10px; background-color: #5CA4A9; border-radius: 50px;"></div>
+                        </div>
+                        <div>
+                            <h6 style="margin: 0px;">Shopping</h6>
+                            <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 1+</p>
+                        </div>
+                    </a>
+                    <a class="room" href="./movies.html">
+                        <div class="logoRoom">
+                            <div style="height: 10px; width: 10px; background-color: #ED6A5A; border-radius: 50px;"></div>
+                        </div>
+                        <div>
+                            <h6 style="margin: 0px;">Movies</h6>
+                            <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 3+</p>
+                        </div>
+                    </a>
+                    <a class="room" href="./posts.html">
+                        <div class="logoRoom">
+                            <div style="height: 10px; width: 10px; background-color: #adb5bd; border-radius: 50px;"></div>
+                        </div>
+                        <div>
+                            <h6 style="margin: 0px;">Post</h6>
+                            <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 5+</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="secSideBar">
-                    <h4 style="font-size: 16px; font-weight: 400; color: gray; text-align: center; margin-top: 10px;">Current room (4)</h4>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-                        <div class="room" onclick="location.href = 'http://127.0.0.1:5500/Advanced-Web-Course/4Room/plants.html'">
-                            <div class="logoRoom">
-                                <div style="height: 10px; width: 10px; background-color: green; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Plants</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 2+</p>
-                            </div>
-                        </div>
-                        <div style="background-color: #dfdfdf;" class="room" onclick="location.href = 'http://127.0.0.1:5500/Advanced-Web-Course/4Room/shopping.html'">
-                            <div class="logoRoom" style="background-color: rgb(237, 237, 237);">
-                                <div style="height: 10px; width: 10px; background-color: #5CA4A9; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Shopping</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 1+</p>
-                            </div>
-                        </div>
-                        <div class="room" onclick="location.href = 'http://127.0.0.1:5500/Advanced-Web-Course/4Room/movies.html'">
-                            <div class="logoRoom">
-                                <div style="height: 10px; width: 10px; background-color: #ED6A5A; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Movies</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 3+</p>
-                            </div>
-                        </div>
-                        <div class="room" onclick="location.href = 'http://127.0.0.1:5500/Advanced-Web-Course/4Room/posts.html'">
-                            <div class="logoRoom">
-                                <div style="height: 10px; width: 10px; background-color: #adb5bd; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Post</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 5+</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: center;">
-                        <button id="join" class="join">Join new room</button>
-                    </div>
+                <div style="display: flex; justify-content: center;">
+                    <button id="join" class="join">Join new room</button>
                 </div>
+            </div>
                 <div class="divLine" style="left: 25%;"></div>
             </div>
             <div class="content">
@@ -259,6 +277,7 @@
                 <h6 id="closeModal" class="closeModal" style="margin: 5px; color: #ED6A5A; text-decoration: underline;">close</h6>
             </div>
         </div>
+        <div class="loading" id="loading"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>

@@ -121,6 +121,8 @@ async function getData(){
 
 getData()
 
+loading.style.display = 'none'
+
 const find = document.getElementById('find')
 
 find.onkeydown = function(e){

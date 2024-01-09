@@ -1,6 +1,7 @@
 let postData = {shop:[]}
 let userData = {users:[]}
 let similar = []
+
 async function getData(){
     try{
         const respApi = await fetch('./shopping.json');
@@ -120,6 +121,8 @@ async function getData(){
 }
 
 getData()
+
+loading.style.display = 'none'
 
 const find = document.getElementById('find')
 

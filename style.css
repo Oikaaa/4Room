@@ -411,6 +411,46 @@
     align-items: center;
 }
 
+.mbNav{
+    position: fixed;
+    top: 68px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.mbNav a{
+    padding: 10px 40px 10px 10px;
+}
+
+.mbNav li{
+    padding: 10px 40px 10px 10px;
+}
+
+.mbNav li:hover{
+    cursor: pointer;
+    background-color: #bfbfbf;
+}
+
+.roomMb{
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 14px;
+    width: 250px;
+}
+
+.fa{
+    font-size: 10px;
+    color: gray;
+}
+
+.icon{
+    padding: 10px;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    margin: 2px 5px 2px 2px;
+}
+
 @media (max-width: 1200px) {
     .article{
         display: none;
@@ -424,9 +464,6 @@
         display: none;
     }
 
-    .navLol{
-        display: none;
-    }
 
     hr{
         display: none;
@@ -470,6 +507,38 @@
 
 .closeModal:hover{
     cursor: pointer;
+}
+
+.loading{
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 100%; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s visibility 0.75s;
+}
+
+.loading::after{
+    content:"";
+    width: 120px;
+    height: 120px;
+    border: 15px solid #dddddd;
+    border-top-color: gray;
+    border-radius: 50%;
+    animation: loading 0.75s, ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(Oturn);
+    }
+    to{
+        transform: rotate(1turn)
+    }
 }
 
 @media (max-width: 768px) {

@@ -4,27 +4,30 @@
     justify-content: center;
 }
 
-nav{
-    top: 0px;
-}
-
-.lists{
-    padding: 10px 100px 10px 12px;
-}
-
-.lists:hover{
-    cursor: pointer;
-    background-color: #e5e5e5;
-}
-
-.list{
-    text-decoration: none;
+.menu ul{
+    background-color: white;
+    margin-right: 15px;
+    
     color: black;
 }
 
-.settingg{
-    width: fit-content;
-    padding: 0px;
+.menu li{
+    padding: 10px 0px 10px 10px;
+}
+
+.menu li:hover{
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+
+.listLink{
+    padding: 10px 60px 10px 10px;
+}
+
+
+
+nav{
+    top: 0px;
 }
 
 .setHeader{
@@ -62,12 +65,17 @@ nav{
     display: flex;
 }
 
+.formDk{
+    width: 50%;
+    display: flex;
+}
+
 .selected{
     background-color: black;
     height: 44px;
     width: 5px;
     position: absolute;
-    left: 282px;
+    left: 275px;
 
 }
 
@@ -111,4 +119,87 @@ nav{
     background-color: #198755 !important;
     color: white;
     margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+    .formMb{
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .listLink{
+        padding: 5px 40px 5px 5px;
+        font-size: 15px;
+    }
+
+    .menu li{
+        padding: 5px 0px 5px 5px;
+    }
+
+    .idk{
+        width: 500px;
+    }
+
+    .selected{
+        display: none;
+    }
+
+    .setHeader{
+        font-size: 20px;
+    }
+
+    .idk{
+        font-size: 16px;
+    }
+
+    .edit{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .idk{
+        width: 275px;
+        font-size: 14px;
+    }
+
+    .listLink{
+        padding: 3px 20px 3px 3px;
+        font-size: 12px;
+    }
+
+    .menu li{
+        width: 100px;
+    }
+    
+    .list{
+        font-size: 12px;
+    }
+
+    .setting{
+        justify-content: flex-start;
+    }
+
+    .formMb{
+        height: 25px;
+        font-size: 11px;
+        width: 70%;
+    }
+
+    .formDk{
+        width: 70%;
+    }
+
+    .setHeader{
+        font-size: 18px;
+    }
+
+    .edit{
+        font-size: 14px;
+    }
+
+    .bodyText{
+        width: 275px;
+        font: 14px;
+    }
 }

@@ -41,7 +41,16 @@ closeModal.addEventListener('click', function(){
     } 
 })
 
-const mb = document.getElementById('mb')
-mb.addEventListener('click', function(){
-    
+//-------------------
+const dashboardMb = document.getElementById('dashboardMb')
+const mbNav = document.getElementById('mbNav')
+
+dashboardMb.addEventListener('click', function(){
+    if (mbNav.style.display === 'none'){
+        mbNav.style.display = 'block'
+        console.log('done')
+    } else{
+        mbNav.style.display = 'none'
+        console.log('fail')
+    }
 })

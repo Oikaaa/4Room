@@ -82,4 +82,6 @@ async function getData(){
 
     getData()
 
+    loading.style.display = 'none'
+
     
