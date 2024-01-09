@@ -219,13 +219,11 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
-    font-size: 10px;
     font-size: 19px; color: #bfbfbf;
     font-family: 'Rubik', sans-serif;
 }
 
 .btnSavedIcon{
-    font-size: 10px;
     font-size: 19px; color: #bfbfbf;
     font-family: 'Rubik', sans-serif;
 }
@@ -424,7 +422,7 @@
 }
 
 .mbNav li{
-    padding: 10px 40px 10px 10px;
+    padding: 10px 40px 10px 0px;
 }
 
 .mbNav li:hover{
@@ -440,7 +438,7 @@
 }
 
 .fa{
-    font-size: 10px;
+    font-size: 15px;
     color: gray;
 }
 
@@ -448,7 +446,7 @@
     padding: 10px;
     background-color: #e1e1e1;
     border-radius: 5px;
-    margin: 2px 5px 2px 2px;
+    margin: 2px 15px 2px 2px;
 }
 
 @media (max-width: 1200px) {
@@ -520,6 +518,10 @@
     align-items: center;
     background-color: #f7f9fb;
     transition: opacity 0.75s visibility 0.75s;
+}
+
+.btnSaved{
+    font-size: 50px;
 }
 
 .loading::after{
