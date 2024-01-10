@@ -17,3 +17,8 @@
         text-decoration: underline;
     }
 }
+
+.aPost{
+    display: flex;
+    justify-content: center;
+}

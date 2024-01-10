@@ -7,7 +7,7 @@ async function getData(){
             topData.articles.forEach(function(item, index){
                 console.log(item.url)
                 const a = document.createElement('a')
-                a.classList.add('post')
+                a.classList.add('aPost')
                 a.href = item.url
                 a.setAttribute('target', '_blank')
 
