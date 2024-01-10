@@ -18,7 +18,7 @@ document.getElementById("btn").addEventListener('click', function(event){
             console.log(existed)
             localStorage.setItem("userSignUpInfo", JSON.stringify(existed))
             setTimeout(function(){
-                window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/index.html")
+                window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/home.html")
             }, 450)
         }else{
             const alert = document.getElementById("alert")

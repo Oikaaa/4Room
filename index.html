@@ -3,284 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Room</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./font-awesome-4.7.0 2/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./signup.css">
 </head>
-<body id="body">
-    <input type="file" name="" id="fileId" hidden>
-        <nav style="background-color: white; position: fixed; width: 100%;">
-            <div style="padding: 5px 50px;">
-            <div style="display: flex; justify-content: space-between; padding: 13px;">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- Mobile menu button-->
-                    <button id="dashboardMb" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                        <span  class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
-                        <!--
-                        Icon when menu is closed.
-            
-                        Menu open: "hidden", Menu closed: "block"
-                        -->
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <!--
-                        Icon when menu is open.
-            
-                        Menu open: "block", Menu closed: "hidden"
-                        -->
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
+<body>
+    <div class="signUp">
+        <h1>Sign Up Form</h1>
+        <form class="row g-3">
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Username</label>
+                <input type="text" class="form-control" id="inputUsername" placeholder="Losantos Demain">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Display Username</label>
+                <input type="text" class="form-control" id="inputDisUsername" placeholder="Rohan_Lucas">
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
                 </div>
-                <div style="display: flex;">
-                    <div class="flex flex-shrink-0 items-center">
-                        <img class="h-8 w-auto" src="./images/mark.svg" alt="Your Company">
-                    </div>
-                    <div class="hidden sm:ml-6 sm:block navLol">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="./index.html" style="padding: 8px;text-decoration: none; color: black;" aria-current="page">Community</a>
-                            <a href="./News.html" style="padding: 8px;text-decoration: none; color: gray">News</a>
-                            <a href="./message.html" style="padding: 8px;text-decoration: none; color: gray">Messages</a>
-                            <a href="./calendar.html" style="padding: 8px;text-decoration: none; color: gray">Calendar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button" class="">
-                    <span class="sr-only">View notifications</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-                    </svg>
-                </button>
-        
-                <!-- Profile dropdown -->
-                <div class="relative ml-3">
-                    <div>
-                    <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                        <span class="absolute -inset-1.5"></span>
-                        <span class="sr-only">Open user menu</span>
-                        <img class="h-8 w-8 rounded-full" src="./images/basicAvatar.avif" alt="">
-                    </button>
-                    </div>            
-                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword">
                 </div>
             </div>
-            <hr class="lineUp" style="background-color: #6366f1; opacity: 1; height: 3px; width: 100px;border-radius: 10px; left: 124px; position: fixed; margin: 0px;" >
-
+            <p id="error" style="color: red; margin: 0px; display: none;">*Email already in used!</p>
+            <div class="col-12">
+                <button type="submit" id="btn" class="btn btn-primary">Sign in</button>
             </div>
-        
-            <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="sm:hidden mm" id="mobile-menu">
-                <div class="space-y-1 px-2 pb-3 pt-2">
-                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
-                </div>
+            <div style="display: flex;">
+                <p>Already have an account?</p><a href="./signin.html">Sign Up now</a>
             </div>
-        </nav>
-        <div id="mbNav" class="mbNav" style="display: none;">
-            <ul>
-                <li>
-                    <a href="./index.html">Community</a>
-                </li>
-                <li>
-                    <a href="./News.html">News</a>
-                </li>
-                <li >
-                    <a href="./message.html">Messages</a>
-                </li>
-                <li>
-                    <a href="./calendar.html">Calender</a>
-                </li>
-                <div style="display: flex;">
-                <div style="width: 100%; height: 1px; background-color: #bfbfbf;"></div>
-                <h2 class="roomMb">Rooms (4)</h2>
-                <div style="width: 100%; height: 1px; background-color: #bfbfbf;"></div>
-                </div>
-                <li>
-                    <a href="./plants.html"><i class="icon fa fa-leaf" aria-hidden="true"></i>Plants</a>
-                </li>
-                <li>
-                    <a href="./shopping.html"><i class="icon fa fa-shopping-cart" aria-hidden="true"></i>Shopping</a>
-                </li>
-                <li>
-                    <a href="./movies.html"><i class="icon fa fa-video-camera" aria-hidden="true"></i>Movies</a>
-                </li>
-                <li>
-                    <a href="./posts.html"><i class="icon fa fa-window-restore" aria-hidden="true"></i>Post</a>
-                </li>
-
-            </ul>
-        </div>
-        <div style="display: flex;">
-            <div class="sidebar">
-                <div class="mainSideBar">
-                    <a class="lorem" href="./index.html">
-                        <div class="SideBarFunc">
-                            <div class="btnSideBar">
-                                <i class="fa fa-home" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
-                            </div>
-                            <p style="padding: 5px 20px; font-size: 15px;">Home</p>
-                        </div>
-                    </a>
-                    <a class="lorem" href="./yourThreads.html">
-                        <div class="SideBarFunc">
-                            <div class="btnSideBar">
-                                <i class="fa fa-comment" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
-                            </div>
-                            <p style="padding: 5px 20px; font-size: 15px;">Your thread</p>
-                        </div>
-                    </a>
-                    <a class="lorem" href="./saved.html">
-                        <div class="SideBarFunc">
-                            <div class="btnSideBar">
-                                <i class="fa fa-bookmark" aria-hidden="true" style="font-size: 19px; color: #bfbfbf;"></i>
-                            </div>
-                            <p style="padding: 5px 20px; font-size: 15px;">Saved</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="secSideBar">
-                    <h4 style="font-size: 16px; font-weight: 400; color: gray; text-align: center; margin-top: 10px;">Current room (4)</h4>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-                        <a class="room" href="./plants.html">
-                            <div class="logoRoom">
-                                <div style="height: 10px; width: 10px; background-color: green; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Plants</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 2+</p>
-                            </div>
-                        </a>
-                        <a class="room" href="./shopping.html">
-                            <div class="logoRoom">
-                                <div style="height: 10px; width: 10px; background-color: #5CA4A9; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Shopping</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 1+</p>
-                            </div>
-                        </a>
-                        <a class="room" href="./movies.html">
-                            <div class="logoRoom">
-                                <div style="height: 10px; width: 10px; background-color: #ED6A5A; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Movies</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 3+</p>
-                            </div>
-                        </a>
-                        <a class="room" href="./posts.html">
-                            <div class="logoRoom">
-                                <div style="height: 10px; width: 10px; background-color: #adb5bd; border-radius: 50px;"></div>
-                            </div>
-                            <div>
-                                <h6 style="margin: 0px;">Post</h6>
-                                <p style="margin: 0px; font-weight: 200; font-size: 15px;">New post 5+</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div style="display: flex; justify-content: center;">
-                        <button id="join" class="join">Join new room</button>
-                    </div>
-                </div>
-                <div class="divLine" style="left: 25%;"></div>
-            </div>
-            <div class="content">
-                <div class="container">
-                    <div>
-                        <div class="addThread">
-                            <input class="thread" type="text" placeholder="Find a thread" id="find">
-                        </div>
-                        <div class="postZone" id="postZone">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="article">
-                <div class="divLine"></div>
-                <div class="profile">
-                    <h3 style="font-size: 25px; margin-top: 30px; margin-bottom: 30px; font-weight: 300;">Account</h3>
-                    <img src="./images/basicAvatar.avif" style="width: 175px; box-shadow: 2px 2px #bfbfbf; height: 175px; border-radius: 10px;" alt="">
-                    <p id="usernameAvatar" class="usernameAvatar"></p>
-
-                    <div class="information">
-                        <p class="hai">Followed: <span style="font-weight: 400">23</span></p>
-                        <p class="hai">Followers: <span style="font-weight: 400">54</span></p>
-                    </div>
-
-                    <div class="friends">
-                        <p style="color: #adb5bd; margin: 10px 0px; font-weight: 400;">Friends (9)</p>      
-                        <div class="realFriends">
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://images.pexels.com/photos/1498337/pexels-photo-1498337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                                <p class="friendName">Heisenburg Conts</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src=" https://images.pexels.com/photos/783243/pexels-photo-783243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                                <p class="friendName"> Elisxasd</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://images.pexels.com/photos/3767392/pexels-photo-3767392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                                <p class="friendName"> Ammenda</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://images.pexels.com/photos/3907442/pexels-photo-3907442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                                <p class="friendName"> Jason Jocking</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFUeSlSOW42R9dO26p70eWog890wZEk4drg&usqp=CAU" alt="">
-                                <p class="friendName"> Fishy Crisp</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://images.pexels.com/photos/10959669/pexels-photo-10959669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                                <p class="friendName"> Logan Pal</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://images.pexels.com/photos/3757004/pexels-photo-3757004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                                <p class="friendName"> Anna Morgana</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://randomuser.me/api/portraits/men/6.jpg" alt="">
-                                <p class="friendName"> Alex Arnord</p>
-                            </div>
-                            <div class="finfo">
-                                <img class="friendAvt" src="https://randomuser.me/api/portraits/men/19.jpg" alt="">
-                                <p class="friendName">Jimmy De Bonde</p>
-                            </div>
-                            
-                        </div>                  
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="display: none;" id="modalBg" class="modalBg">
-            <div class="modalJoin">
-                <h1 style="font-size: 30px; margin: 10px; font-weight: 500;">Join new room via code!</h1>
-                <input type="text" placeholder="e.g. 124125" style="width: 90%; height: 45px; outline-style: solid; border-radius: 10px; outline-color: gray; padding: 0px 20px 0px 20px; margin: 5px;">
-                <div style="display: flex; justify-content: center; width: 90%;">
-                    <button class="joinNow" style="height: 50px; width: 100%;">Join now</button>
-                </div>
-                <h6 id="closeModal" class="closeModal" style="margin: 5px; color: #ED6A5A; text-decoration: underline;">close</h6>
-            </div>
-        </div>
-        
-
+        </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js"></script>
-    <script src="./home.js"></script>
+    <script src="./signup.js"></script>
 </body>
 </html>

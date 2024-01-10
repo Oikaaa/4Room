@@ -71,9 +71,6 @@ async function getData(){
                 hello.appendChild(content)
                 hello.appendChild(img)
             })
-
-            
-
         }
         catch(e){
             console.log(e)
@@ -82,6 +79,8 @@ async function getData(){
 
     getData()
 
-    loading.style.display = 'none'
+    setTimeout(function(){
+        loading.style.display = 'none'
+    },5000)
 
     
