@@ -49,7 +49,7 @@ document.getElementById("btn").addEventListener('click', function(e){
             const user = JSON.parse(localStorage.getItem("userSignUpInfo"))
             user.push(userInfo)
             localStorage.setItem("userSignUpInfo", JSON.stringify(user))
-            window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/signin.html")
+            window.location.replace("./signin.html")
         }
         console.log("successed")
     } else{

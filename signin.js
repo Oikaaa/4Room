@@ -18,7 +18,7 @@ document.getElementById("btn").addEventListener('click', function(event){
             console.log(existed)
             localStorage.setItem("userSignUpInfo", JSON.stringify(existed))
             setTimeout(function(){
-                window.location.replace("https://oikaaa.github.io/4room/home")
+                window.location.replace("./home.html")
             }, 450)
         }else{
             const alert = document.getElementById("alert")

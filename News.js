@@ -9,6 +9,7 @@ async function getData(){
                 const a = document.createElement('a')
                 a.classList.add('post')
                 a.href = item.url
+                a.setAttribute('target', '_blank')
 
                 const post = document.createElement('div')
                 post.classList.add('post')

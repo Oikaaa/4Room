@@ -7,7 +7,7 @@ function inAccount (IN){
 
 if (signUpAccount === undefined){
     
-    window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/signin.html")
+    window.location.replace("./signin.html")
 } else {
     const usernameAvatar = document.getElementById("usernameAvatar")
     usernameAvatar.innerText = signUpAccount.display
@@ -18,7 +18,7 @@ const profile = document.getElementById('user-menu-button')
 
 profile.addEventListener('click',function(){
     setTimeout(function(){
-        window.location.replace("http://127.0.0.1:5500/Advanced-Web-Course/4Room/profile.html#")
+        window.location.replace("./profile.html")
     }, 450)
 })
 
