@@ -1,18 +1,5 @@
 if (localStorage.getItem("userSignUpInfo") === null){
-    localStorage.setItem("userSignUpInfo", JSON.stringify([
-        {
-            username: "dummy",
-            display: "dummy",
-            email: "dummy@gmail.com",
-            password: "wontworknigga",
-            logCondition: "OUT",
-            month: "",
-            date: "",
-            year: "",
-            location: "",
-            gender: "",
-        }
-    ]))
+    localStorage.setItem("userSignUpInfo", JSON.stringify([]))
 }
 
 const inputUsername = document.getElementById('inputUsername')

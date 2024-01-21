@@ -19,7 +19,7 @@ usernameAvatar.innerText = JSON.parse(localStorage.getItem("userSignUpInfo"))[0]
 
         postData.posts.forEach(function(item, index){
             const currentUser = userData.users.find(function(user){
-                return user.id === item.id
+                return user.id === item.userId
             })
 
             const postDiv = document.createElement('div')
